@@ -4,6 +4,12 @@
   "dependencies": {
     "R": [
       {
+        "name": "promises"
+      },
+      {
+        "name": "future"
+      },
+      {
         "name": "starsTileServer"
       },
       {
@@ -26,6 +32,12 @@
       },
       {
         "name": "stringr"
+      },
+      {
+        "name": "moveShiny"
+      },
+      {
+        "name": "getRad"
       },
       {
         "name": "sf"

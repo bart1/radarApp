@@ -3,7 +3,7 @@ library("shinydashboard")
 library("move2")
 # library("moveShiny")
 future::plan(future::cluster)
-devtools::load_all("~/moveShiny")
+#devtools::load_all("~/moveShiny")
 library("stringr")
 library("sf")
 library("leaflet")
@@ -57,7 +57,7 @@ shinyModule <- function(input, output, session, data) {
     time = time$time
   )
   dateSelected <- moveDateSelectServer("dateRangeNS", current)
-  d <- as.Date("2023-6-30")
+  #d <- as.Date("2023-6-30")
 
   #     current<-reactiveVal({
   #   m <-
@@ -85,18 +85,18 @@ shinyModule <- function(input, output, session, data) {
   #     )
   # })
 
-  current <- reactiveVal({
-    m <-
-      move2::mt_stack(
-        move2::movebank_download_study(1415844328,
-          attributes = NULL,
-          timestamp_start = as.POSIXct("2020-10-1"),
-          timestamp_end = as.POSIXct("2020-10-20")
-        )
-      )
-  })
+#  current <- reactiveVal({
+#    m <-
+#      move2::mt_stack(
+#        move2::movebank_download_study(1415844328,
+#          attributes = NULL,
+#          timestamp_start = as.POSIXct("2020-10-1"),
+#          timestamp_end = as.POSIXct("2020-10-20")
+#        )
+#      )
+#  })
 
-  # current <- reactiveVal(data)
+   current <- reactiveVal(data)
   #
   # data must be returned. Either the unmodified input data, or the modified data by the app
   return(reactive({
