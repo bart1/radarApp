@@ -1,5 +1,6 @@
 {
   "version": "0.1",
+  "settings": [],
   "dependencies": {
     "R": [
       {
@@ -32,18 +33,14 @@
     ]
   },
   "providedAppFiles": [
-    {
-      "settingId": "auxiliary-file-a",
-      "from": "data/auxiliary/user-files/provided-app-files/auxiliary-file-a/sample.txt"
-    }
   ],
   "license": {
     "key": "GPL V3.0"
   },
   "language": "eng",
   "keywords": [
-    "example",
-    "template"
+    "radar",
+    "visualization"
   ],
   "people": [
     {
