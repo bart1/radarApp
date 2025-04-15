@@ -3,7 +3,6 @@ library(dotenv)
 # You can define things like input-data, output-data etc.
 # Per default your environment is defined in `/.env`
 load_dot_env()
-
 # provide common stuff
 source("src/common/logger.R")
 source("src/common/runtime_configuration.R")

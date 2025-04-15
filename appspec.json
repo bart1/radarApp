@@ -1,15 +1,19 @@
 {
-  "version": "1.2",
-  "settings": [
-    {
-      "id": "auxiliary-file-a",
-      "name": "Personalization",
-      "description": "You can personalize the app by providing a file",
-      "type": "USER_FILE"
-    }
-  ],
+  "version": "0.1",
   "dependencies": {
     "R": [
+      {
+        "name": "starsTileServer"
+      },
+      {
+        "name": "leaflet"
+      },
+      {
+        "name": "stringr"
+      },
+      {
+        "name": "cachem"
+      },
       {
         "name": "shiny"
       },
@@ -34,7 +38,7 @@
     }
   ],
   "license": {
-    "key": "MIT"
+    "key": "GPL V3.0"
   },
   "language": "eng",
   "keywords": [
@@ -43,10 +47,10 @@
   ],
   "people": [
     {
-      "firstName": "Charles",
+      "firstName": "Bart",
       "middleInitials": null,
-      "lastName": "Darwin",
-      "email": "creator@example.com",
+      "lastName": "Kranstauber",
+      "email": "app@kranstauber.eu",
       "roles": [
         "author",
         "creator"
@@ -58,7 +62,7 @@
   ],
   "funding": [
     {
-      "name": "funder name",
+      "name": "funder name to be done",
       "comment": "grant for App"
     }
   ],
