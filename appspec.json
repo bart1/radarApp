@@ -34,10 +34,10 @@
         "name": "stringr"
       },
       {
-        "name": "moveShiny"
+        "name": "getRad"
       },
       {
-        "name": "getRad"
+        "name": "moveShiny"
       },
       {
         "name": "sf"
