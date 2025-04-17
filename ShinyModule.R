@@ -1,9 +1,11 @@
 library("shiny")
 library("shinydashboard")
 library("move2")
-# library("moveShiny")
+library("moveShiny")
 future::plan(future::cluster)
 #devtools::load_all("~/moveShiny")
+#library("moveShiny")
+
 library("stringr")
 library("sf")
 library("leaflet")
@@ -30,7 +32,7 @@ shinyModuleUserInterface <- function(id, label) {
         radarMapUI(ns("radarMapNS"))
       ),
       dashboardBody(
-        leafletOutput(ns("map")),
+        leafletOutput(ns("map"), height = "600px"),
         verbatimTextOutput(ns("prt"))
       )
     )
